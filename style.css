@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  /* border: 1px solid red; */
 }
 .flex {
   display: flex;
@@ -51,6 +52,7 @@ nav {
   gap: 50px;
 }
 .hero_img {
+  width: 480px;
   margin-right: 30px;
 }
 .hero_content h1 {
@@ -232,7 +234,7 @@ span {
 
 /* ----------------------Slider_section-start-------------------- */
 .slider_card{
-  padding: 160px;
+  padding: 80px 160px;
 }
 .slider-box{
   width: 300px;
@@ -301,14 +303,14 @@ span {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  gap: 20px;
-  padding: 20px 10px;
+  gap: 50px;
+  padding: 40px 10px;
 }
 .subcriber h1{
   font-size: 30px;
 }
 .subcriber p{
-  font-size: 12px;
+  font-size: 14px;
   color: #909090;
 }
 input{
@@ -317,9 +319,9 @@ input{
   margin-left: 10px;
 }
 .subcriber_border{
-  border: 1px solid;
-  box-shadow: 0px 1px 1px 0px #fff;
-  border-radius: 0 7px 7px 0px;
+  /* border: 1px solid; */
+  box-shadow:1px 0px 3px 1px #e7d4d4;
+  border-radius: 0 7px 7px 0px ;
   
 }
 .button_btn{
@@ -328,9 +330,34 @@ input{
   color: #fff;
   padding: 10px;
   border-radius: 0 7px 7px 0px;
-
 }
+/* -----------------Footer_start----------------- */
+footer{
+  background-color: #e7d4d4;
+}
+.footer_image{
+  width: 200px;
+}
+.footer_content{
+  justify-content: space-around;
+  padding: 40px;
+}
+.footer_content ul li{
+  list-style: none;
+}
+.footer_content ul li a{
+  text-decoration: none;
+}
+.footer_logo{
+  justify-content: space-around;
+  gap: 350px;
+}
+/* .footer_img{
+  width: 130px;
+} */
 
+  
+  
  
 
 /* phone-view  */
@@ -338,18 +365,28 @@ input{
   .hero {
     flex-direction: column;
   }
+  .hero_img{
+    width: 380px;
+  }
   .vector {
     margin: 50px 10px;
   }
   .vector h2 {
     color: #4540d9;
-    font-size: 1rem;
+    font-size: 12px;
+    font-weight: 900;
   }
   .vector_image {
-    width: 100px;
+    width: 50px;
   }
   .boxces{
     padding: 0px 100px;
+  }
+  .footer_content{
+    flex-direction: column;
+  }
+  .footer_logo{
+    gap: 150px;
   }
 }
 @media (max-width: 424px) {
@@ -382,5 +419,13 @@ input{
   .categories_border{
     width: 900px;
   }
-  
+  .slider_card{
+    padding: 38px;
+  }
+  ul{
+    flex-direction: column;
+  }
+  .footer_logo{
+    gap: 50px;
+  }
 }
