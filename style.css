@@ -4,7 +4,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  border: 1px solid red;
 }
 .flex {
   display: flex;
@@ -29,6 +28,7 @@ header {
   background-image: url("./image/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 nav {
   display: flex;
@@ -51,6 +51,7 @@ nav {
 .hero_content {
   flex-direction: column;
   gap: 50px;
+  padding: 10px;
 }
 .hero_img {
   /* max-width: 360px; */
@@ -394,7 +395,7 @@ footer{
 }
 @media (max-width: 424px) {
   header {
-    padding: 10px 0;
+    padding: 10px;
   }
   .hero_img {
     /* width: 380px; */
