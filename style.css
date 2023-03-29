@@ -364,6 +364,9 @@ footer{
 
 /* phone-view  */
 @media (max-width: 724px) {
+  body{
+    padding:20px;
+  }
   .hero {
     flex-direction: column;
   }
